@@ -172,5 +172,6 @@ dist
 .idea
 
 # local data
+.DS_Store
 _data
 _local
