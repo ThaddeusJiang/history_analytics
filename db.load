@@ -1,0 +1,12 @@
+load database
+     from sqlite:///Users/tj/git/ThaddeusJiang/history_analytics/_data/arc/history.db
+     into postgresql://postgres@localhost:5432/arc_history_copy
+
+WITH data only,
+     include no drop,
+     create tables,
+     data only
+
+set work_mem to '16MB', maintenance_work_mem to '512 MB'
+
+CAST type LONGVARCHAR TO TEXT;
